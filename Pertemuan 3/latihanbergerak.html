@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Gambar</title>
+</head>
+    <style>
+        #badan1 {
+            background-color: rgb(0, 0, 0, 0.3);
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 5%;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 10%;
+        }
+
+        #badan2 {
+            background-color: rgb(0, 0, 0, 0.3);
+            color: aliceblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 10%;
+        }
+
+        #badantengah {
+            margin-left: 30%;
+            margin-right: 30%;
+            border-left: solid rgb(255, 255, 255, 0.3);
+            border-right: solid rgb(255, 255, 255, 0.3);
+        }
+
+        body {
+            background-image: url(gambar/76aa24bf1e433a13444c18c5df7b839b.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            bac
+        }
+
+        #judul {
+            text-align: center;
+            margin: 5%;
+            font-size: 150%;
+        }
+
+        #subjudul {
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-size: 100%;
+            display: flex;
+        }
+
+        @keyframes ketikan {
+            from { width: 0 }
+            to { width: 90% }
+        }
+
+        @keyframes kedip {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+
+        .animasiketik {
+            overflow: hidden;
+            border-right: 0.15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: ketikan 3.5s steps(40, end), kedip 0.75s step-end infinite;
+        }
+
+        #gambar {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+
+        img {
+            margin: 2%;
+            width: 175px;
+            height: 220px;
+            
+        }
+
+        .gambardipilih {
+            transition: transform 0.3s;
+        }
+
+        .gambardipilih:hover {
+            transform: scale(1.1);
+        }
+    </style>
+<body>
+    <!-- box 1 atas -->
+    <div id="badan1">
+        <div id="judul"><b><br>GAMBAR BERGERAK</b><br></div>
+        <div id="subjudul" class="animasiketik">Muhammad Juzairi Safitli | NIM 21111073</div>
+        <hr>
+    </div>
+    <!-- box gambar bergerak -->
+    <div id="badantengah">
+            <div id="gambar">
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="left" loop="-1">
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/1.png" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/2.png" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/3.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/4.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/5.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/6.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/7.png" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/8.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/9.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/10.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                    <a href="https://lptik.unh.ac.id/pages/staff/aslab.html" target="_blank"><img src="gambar/11.jpg" alt="gambarbergerak" width="30%" class="gambardipilih"></a>
+                </marquee>
+            </div>
+    </div>
+    <!-- box 2 bawah -->
+    <div id="badan2">
+        <hr>
+        <div id="judul"><u>Deskripsi Tugas</u></div>
+        <div id="subjudul">Membuat 10 gambar bergerak menggunakan variabel Marquee, diamana 10 gambar memiliki link atau target destinasi ketika diklik. TAMBAHAN: Berhenti ketika mouse mendekat <br> <br></div>
+    </div>
+</body>
+</html>
