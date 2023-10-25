@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Tugas</title>
+    <style>
+        body {
+            background-color: #222222;
+            color: #F3EFE0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #background {
+            background-color: rgba(67, 66, 66, 0.5);
+            border-bottom: solid #F3EFE0;
+            display: flex;
+            justify-content: space-between; /* Membuat elemen di sisi kiri dan kanan */
+            align-items: center; /* Mengatur vertikal tengah */
+            width: 100%;
+        }
+
+        #judulheader {
+            margin: 2%;
+            text-align: left;
+            font-size: 95.5%;
+            margin-right: 0%;
+            height: 100%;
+            ;
+        }
+
+        #identitas {
+            text-align: center;
+            font-size: 95.5%;
+            display: flex; /* Mengatur rata kanan */
+            height: 100%;
+        }
+
+        #pencarian {
+            margin-right: 2%;
+            font-size: 95.5%;
+            height: 100%;
+        }
+
+        .tentangmatkul {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tentangmatkul-konten {
+            display: none;
+            position: absolute;
+        }
+
+        .tentangmatkul:hover .tentangmatkul-konten {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- header bagian atas (judul, identitas, dan menu cari) -->
+    <header id="background">
+        <div id="judulheader">
+            <span style="font-weight: bold;">MATA KULIAH PEMROGRAMAN BERBASIS WEB</span>
+        </div>
+        <div id="identitas">
+            Muhammad Juzairi Safitli | 21111073
+        </div>
+        <!-- menu cari -->
+        <div id="pencarian">
+            <form>
+                <label for="search">Cari materi:</label>
+                <input type="search" placeholder="Cari materi di sini...">
+                <button type="submit">Cari</button>
+            </form>
+        </div>
+    </header>
+    <div class="tentangmatkul">
+        <nav>
+            <span>Tentang mata kuliah</span>
+            <div class="tentangmatkul-konten">
+                <ul>
+                    <li><a href="">Apa itu web?</a></li>
+                    <li><<a href="">Apa yang akan dipelajari?</a></li>
+                    <li><<a href="">Yang dibutuhkan?</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
