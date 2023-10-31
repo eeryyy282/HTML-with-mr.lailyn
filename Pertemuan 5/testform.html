@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form dan Fieldset</title>
+</head>
+<body>
+    <h1>Menggunakan Form</h1>
+    <!-- dengan form -->
+    <form action="" submit="POST">
+        <input type="email" name="email" required placeholder="Masukkan Email"> <br> <br>
+        <input type="text" name="username" id="" required placeholder="Masukkan Username"> <br> <br>
+        <input type="password" name="password" required placeholder="Masukkan Password"> <br> <br>
+        <input type="password" name="konfirmasi_password" required placeholder="Masukkan Kembali Password"> <br> <br>
+        <button value="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Kembali</button>
+    </form>
+    <br>
+    <br>
+
+    <h1>Menggunakan Fieldset</h1>
+    <!-- dengan fieldset -->
+    <fieldset>
+        <legend>LOGIN AKUN</legend>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Masukkan Username" required name="username" id="username">
+        <br><br>
+        <label for="passowrd">Passoword</label>
+        <input type="password" placeholder="Masukkan Password" required name="passowrd" id="passowrd">
+        <br><br>
+        <button type="submit">Login</button>
+    </fieldset>
+</body>
+</html>
