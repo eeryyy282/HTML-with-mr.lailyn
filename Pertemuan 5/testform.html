@@ -6,13 +6,21 @@
     <title>Test Form dan Fieldset</title>
 </head>
 <body>
-    <h1>Menggunakan Form</h1>
+    <h1>Menggunakan Form Untuk Register</h1>
     <!-- dengan form -->
     <form action="" submit="POST">
-        <input type="email" name="email" required placeholder="Masukkan Email"> <br> <br>
-        <input type="text" name="username" id="" required placeholder="Masukkan Username"> <br> <br>
-        <input type="password" name="password" required placeholder="Masukkan Password"> <br> <br>
-        <input type="password" name="konfirmasi_password" required placeholder="Masukkan Kembali Password"> <br> <br>
+        Email: <input type="email" name="email" required placeholder="Masukkan Email"> <br> <br>
+        Username: <input type="text" name="username" id="" required placeholder="Masukkan Username"> <br> <br>
+        Passowprd: <input type="password" name="password" required placeholder="Masukkan Password"> <br> <br>
+        Konfirmasi Passoword: <input type="password" name="konfirmasi_password" required placeholder="Masukkan Kembali Password"> <br> <br>
+        Jenis Kelamin: <input type="radio" value="laki" name="jenis-kelamin"> Laki-laki <input type="radio" value="perempuan" name="jenis-kelamin"> Perempuan <br><br>
+        Program Studi:
+            <select name="prodi" id="prodi" >
+                <option value="si">Sistem Informasi</option>
+                <option value="ti">Teknologi Informatika</option>
+                <option value="teknosi">Teknologi Informasi</option>
+            </select>
+        <br><br>
         <button value="submit">Submit</button>
         <button type="reset">Reset</button>
         <button type="button">Kembali</button>
@@ -20,7 +28,7 @@
     <br>
     <br>
 
-    <h1>Menggunakan Fieldset</h1>
+    <h1>Menggunakan Fieldset Untuk Login</h1>
     <!-- dengan fieldset -->
     <fieldset>
         <legend>LOGIN AKUN</legend>
