@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #393E46;
+            background-attachment: fixed;
+        }
+        header {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 2%;
+            background-color: #F7F7F7;
+            
+        }
+        .isiluar {
+            display: flex;
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: #F7F7F7;
+            font-size: 80%;
+        }
+        .isidalam {
+            margin: 2%;
+            margin-top: 0%;
+            border: solid #393E46;
+            width: 100%;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .isidalam input:focus {
+            outline: none;
+        }
+        img {
+            width: 10%;
+        }
+
+        .logo {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    
+        .judul {
+            justify-self: left;
+            justify-content: left;
+            justify-items: left;
+            flex: 1;
+            font-size: 80%;
+            margin-right: 6%;
+            color: #6D9886;
+            font-weight: bold;
+        }
+
+        .judulkanan {
+            flex: 1;
+            justify-self: right;
+            justify-content: right;
+            justify-items: right;
+            font-size: 80%;
+            margin-left: 6%;
+            margin-right: 3%;
+            text-align: right;
+        }
+        .point {
+            font-weight: bold;
+        }
+        .isi {
+            font-weight: normal;
+            margin-left: 1.5%;
+        }
+        .isi input{
+            width: 50%;
+            border: 0;
+            background: #F7F7F7;
+            border-bottom: solid #393E46;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Juzairi Game Store BG Hitam.png" alt="logo-formulir"> 
+            <div class="judul">
+                <div style="font-size: medium;">RUMAH HIDUP</div>
+                <div style="font-size: large;">JUZAIRI SAFITLI</div>
+                <div style="font-size: smaller;">Melayani dengan penuh kasih</div>
+            </div>
+            <div class="judulkanan">
+                <div>RM 01</div>
+                <div style="font-weight: bold;;">FORMULIR PENDAFTARAN RAWAT INAP / ONE DAY CARE</div>
+                <div style="font-style: italic;">Semua Bagian Harus Diisi</div>
+            </div>
+        </div>
+    </header>
+    <form action="" submit="POST">
+        <div class="isiluar">
+            <div class="isidalam">
+                <div style="text-align: right; margin-right: 6%; margin-top: 2%;">No. Rekam Medis</div>
+                <div>
+                    <label for="nomor-register">No. Register :</label><input type="text" id="nomor-register" style="width: 30%; border: 0px; border-bottom: solid #393E46; background-color: #F7F7F7;" >
+                </div>
+                <br>
+                <div class="point">
+                    A. IDENTITAS PASIEN &lpar;bagian ini harus lengkap dan mohon diisi pasien&rpar;
+                    <div class="isi">    
+                        <div><label for="nama-depan">Nama depan &lpar;sesuai KTP&rpar;:</label><input type="text" id="nama-depan"></div>
+                        <div><label for="nama-ibu-kandung">Nama Ibu Kandung &lpar;sesuai KTP&rpar;:</label><input type="text" id="nama-ibu-kandung"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
