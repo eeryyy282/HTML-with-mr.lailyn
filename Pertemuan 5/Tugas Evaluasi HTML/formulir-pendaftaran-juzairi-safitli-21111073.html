@@ -27,7 +27,7 @@
         .isidalam {
             margin: 2%;
             margin-top: 0%;
-            border: solid black;
+            border: 2px solid black;
             width: 100%;
             padding-left: 1%;
             padding-right: 1%;
@@ -72,6 +72,7 @@
             font-weight: bold;
         }
         .isi {
+            width: 100%;
             font-weight: normal;
             margin-left: 1.5%;
             margin-top: 1%;
@@ -80,8 +81,25 @@
         .isi input{
             border: 0;
             background: #F7F7F7;
-            border-bottom: solid black;
+            border-bottom: 1px solid black;
             width: 100%;
+        }
+        .isi table {
+            margin-right: 2%;
+            width: fit-content
+        }
+        .judulnomor {
+            display: flex;
+        }
+        .judulnomor input {
+            border: 1px solid black;
+            background-color: #F7F7F7;
+            height: 85%;
+            width: 85%;
+        }
+        .tabelnomor {
+            margin-left: auto;
+            margin-right: 0.2%;
         }
     </style>
 </head>
@@ -104,33 +122,67 @@
     <form action="" submit="POST">
         <div class="isiluar">
             <div class="isidalam">
-                <div style="text-align: right; margin-right: 6%; margin-top: 2%;">No. Rekam Medis</div>
-                <div>
-                    <table style="display: flex;">
+                <div style="text-align: right; margin-right: 8.5%; margin-top: 2%;">No. Rekam Medis</div>
+                <div class="judulnomor">
+                    <table>
                         <tr>
                             <td><label for="nomor-registrasi">No. Registrasi</label></td>
                             <td>:</td>
-                            <td><input type="text" name="nomor-registrasi" id="nomor-registrasi" rowspan="3" style="width: 100%; border: none; background-color: #F7F7F7; border-bottom: solid black;"></td>
+                            <td><input type="text" name="nomor-registrasi" id="nomor-registrasi" rowspan="3" style="width: 100%; border: none; background-color: #F7F7F7; border-bottom: 1px solid black;"></td>
+                        </tr>
+                    </table>
+                    <table height="50px" width="250px" class="tabelnomor">
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
                         </tr>
                     </table>
                 </div>
+                <br>
                 <div class="point">
                     A. IDENTITAS PASIEN &lpar;bagian ini harus lengkap dan mohon diisi pasien&rpar;
                     <div class="isi">    
                         <table>
                             <tr>
-                                <td><label for="nama-depan">Nama depan &lpar;sesuai KTP&rpar;</label></td>
+                                <td width="20%"><label for="nama-depan">Nama Depan &lpar;sesuai KTP&rpar;</label></td>
                                 <td>:</td>
-                                <td style="width: 57%;"><input type="text" name="nama-depan" id="nama-depan"></td>
-                                <td><input type="radio" name="jenis-kelamin" value="laki"></td>
-                                <td>Laki-laki</td>
-                                <td><input type="radio" name="jenis-kelamin" value="perempuan"></td>
-                                <td>Perempuan</td>
+                                <td colspan="6"><input type="text" id="nama-depan" name="nama-depan"></td>
+                                <td width="2%"><input type="radio" name="jenis-kelamin" id="laki-laki"></td>
+                                <td width="6%"><label for="laki-laki">Laki-laki</label></td>
+                                <td width="2%"><input type="radio" name="jenis-kelamin" id="perempuan"></td>
+                                <td width="6%"><label for="perempuan">Perempuan</label></td>
                             </tr>
                             <tr>
                                 <td><label for="nama-ibu-kandung">Nama Ibu Kandung &lpar;sesuai KTP&rpar;</label></td>
                                 <td>:</td>
-                                <td><input type="text" name="nama-ibu-kandung" id="nama-ibu-kandung" style="width: 135%;"></td>
+                                <td colspan="11"><input type="text" name="nama-ibu-kandung" id="nama-ibu-kandung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tempat-tanggal-lahir">Tempat & Tanggal Lahir</label></td>
+                                <td>:</td>
+                                <td colspan="3" width="40%"><input type="text" name="tempat-tanggal-lahir" id="tempat-tanggal-lahir"></td>
+                                <td width="4%"><label for="agama">Agama</label></td>
+                                <td width="1%">:</td>
+                                <td colspan="5"><input type="text" name="agama" id="agama"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td width="20%"><label for="alamat-rumah">Alamat Rumah &lpar;sesuai KTP&rpar;</label></td>
+                                <td width="1.4%">:</td>
+                                <td width="40%"><input type="text" id="alamat-rumah" name="alamat-rumah"></td>
+                                <td><label for="alamat-nomor">No.</label></td>
+                                <td><input type="number" name="alamat-nomor" id="alamat-nomor"></td>
+                                <td><label for="rt">Rt.</label></td>
+                                <td><input type="number" name="rt" id="rt"></td>
+                                <td><label for="rw">Rw.</label></td>
+                                <td><input type="number" name="rw" id="rw"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td></td>
                             </tr>
                         </table>
                     </div>
