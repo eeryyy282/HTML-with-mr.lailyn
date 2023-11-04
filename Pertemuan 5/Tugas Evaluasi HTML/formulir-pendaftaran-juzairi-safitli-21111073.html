@@ -411,12 +411,44 @@
                                 <td><input type="text" name="rujukan" id="progres-group"></td>
                             </tr>
                         </table>
-                        <table>
+                        <table border="0">
                             <tr>
-                                <td></td>
+                                <td width="21%"><label for="cara-pembayaran">Cara Pembayaran</label></td>
+                                <td>:</td>
+                                <td><input type="radio" name="cara-pembayaran" id="pribadi" value="pribadi"></td>
+                                <td width="5%"><label for="pribadi">Pribadi</label></td>
+                                <td><input type="radio" name="cara-pembayaran" id="jaminan" value="jaminan"></td>
+                                <td><label for="jaminan">Jaminan</label></td>
+                                <td>:</td>
+                                <td width="70%"><input type="text" name="cara-pembayaran" id="jaminan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="kode-perusahaan">Kode Perusahaan / Asuransi</label></td>
+                                <td>:</td>
+                                <td colspan="6"><input type="text" name="kode-perusahaan" id="kode-perusahaan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="surat-jaminan">Surat Jaminan</label></td>
+                                <td>:</td>
+                                <td><input type="radio" name="surat-jaminan" id="ya1" value="true"></td>
+                                <td><label for="ya1">Ya</label></td>
+                                <td><input type="radio" name="surat-jaminan" id="tidak1" value="false"></td>
+                                <td><label for="tidak1">Tidak</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="surat-rujukan">Surat Rujukan</label></td>
+                                <td>:</td>
+                                <td><input type="radio" name="surat-rujukan" id="ya2" value="true"></td>
+                                <td><label for="ya2">Ya</label></td>
+                                <td><input type="radio" name="surat-rujukan" id="tidak2" value="false"></td>
+                                <td><label for="tidak2">Tidak</label></td>
                             </tr>
                         </table>
                     </div>
+                <!-- Point D surat pernyataan persetujuan -->
+                <div class="point">
+                    <div style="font-size: larger;">D. SURAT PERNYATAAN PERSETUJUAN PERTATURAN RUMAH SAKIT DAN HAK PASIEN</div>
+                </div>
             </div>
         </div>
     </form>
