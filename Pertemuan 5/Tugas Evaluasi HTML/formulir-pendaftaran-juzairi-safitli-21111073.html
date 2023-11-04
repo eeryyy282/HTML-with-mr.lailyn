@@ -104,10 +104,6 @@
         .isinyaisi {
             margin-left: 21%;
         }
-        .isibagianc {
-            display: flex;
-            width: fit-content;
-        }
     </style>
 </head>
 <body>
@@ -348,12 +344,78 @@
                                 <td colspan="9">Asal Pasien &lpar;pilih satu&rpar;</td>
                             </tr>
                         </table>
-                        <div class="isibagianc">
-                            <input type="radio" name="asal-pasien" id="igd" value="igd">
-                            <label for="igd" style="margin-right: 35%;">IGD</label>
-                            <input type="radio" name="asal-pasien" id="irj" value="irj" style="margin-left: 35%;">
-                            <label for="irj">IRJ</label>
-                        </div>
+                        <table border="0">
+                            <tr>
+                                <td><input type="radio" value="igd" name="asal-pasien" id="igd"></td>
+                                <td width="10%"><label for="igd">IGD</label></td>
+                                <td><input type="radio" name="asal-pasien" value="irj" id="irj"></td>
+                                <td width="10%"><label for="irj">IRJ</label></td>
+                                <td colspan="2" width="40%">Jaminan Kesehatan :</td>
+                                <td colspan="4" width="35%">Rujukan :</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td width="1%"><input type="checkbox" name="jaminan-kesehatan" id="gakin-sktm" value="gakin-sktm"></td>
+                                <td><label for="gakin-sktm">GAKIN/SKTM</label></td>
+                                <td width="1%"><input type="radio" value="royal-progres" name="rujukan" id="royal-progres"></td>
+                                <td><label for="royal-progres">Dr. Royal Progress</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="royal-progres"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="checkbox" name="jaminan-kesehatan" id="askes" value="askes"></td>
+                                <td><label for="askes">ASKES</label></td>
+                                <td><input type="radio" name="rujukan" id="kerjasama" value="kerjasama"></td>
+                                <td><label for="kerjasama">Dr. Kerjasama / Rujukan</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="kerjasama"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="checkbox" name="jaminan-kesehatan" id="jamsostek" value="jamsostek"></td>
+                                <td><label for="jamsostek">JAMSOSTEK</label></td>
+                                <td><input type="radio" name="rujukan" id="rumah-sakit" value="rumah-sakit"></td>
+                                <td><label for="rumah-sakit">Rumah Sakit</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="rumah-sakit"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="checkbox" name="jaminan-kesehatan" id="lainnya" value="lainnya"></td>
+                                <td><label for="lainnya">Lainnya</label></td>
+                                <td><input type="radio" name="rujukan" id="bidan" value="bidan"></td>
+                                <td><label for="bidan">Bidan</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="bidan"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"></td>
+                                <td><input type="radio" name="rujukan" id="perusahaan-rekanan" value="perusahaan-rekanan"></td>
+                                <td><label for="perusahaan-rekanan">Perusahaan Rekanan</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="perusahaan-rekanan"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"></td>
+                                <td><input type="radio" name="rujukan" id="yayasan" value="yayasan"></td>
+                                <td><label for="yayasan">Yayasan</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="yayasan"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"></td>
+                                <td><input type="radio" name="rujukan" id="progres-group" value="progres-group"></td>
+                                <td><label for="progres-group">Progres Group</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="rujukan" id="progres-group"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
                     </div>
             </div>
         </div>
