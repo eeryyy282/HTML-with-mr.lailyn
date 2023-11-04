@@ -101,6 +101,13 @@
             margin-left: auto;
             margin-right: 0.2%;
         }
+        .isinyaisi {
+            margin-left: 21%;
+        }
+        .isibagianc {
+            display: flex;
+            width: fit-content;
+        }
     </style>
 </head>
 <body>
@@ -140,8 +147,9 @@
                     </table>
                 </div>
                 <br>
+                <!-- BAGIAN A IDENTITAS PASIEN -->
                 <div class="point">
-                    A. IDENTITAS PASIEN &lpar;bagian ini harus lengkap dan mohon diisi pasien&rpar;
+                    <div style="font-size: larger;">A. IDENTITAS PASIEN &lpar;bagian ini harus lengkap dan mohon diisi pasien&rpar;</div>
                     <div class="isi">    
                         <table>
                             <tr>
@@ -180,13 +188,173 @@
                                 <td><input type="number" name="rw" id="rw"></td>
                             </tr>
                         </table>
+                        <table class="isinyaisi">
+                            <tr>
+                                <td width="12%"><label for="kelurahan">Kelurahan</label></td>
+                                <td>:</td>
+                                <td width="47%"><input type="text" name="kelurahan" id="kelurahan"></td>
+                                <td width="10%" style="text-align: right;"><label for="kecamatan">Kec.</label></td>
+                                <td width="47%" style="margin-right: 2%;"><input type="text" name="kecamatan" id="kecamatan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="kota-wilayah">Kota / Wilayah</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="kota-wilayah" id="kota-wilayah"></td>
+                                <td style="text-align: right;"><label for="telepon">Telepon.</label></td>
+                                <td><input type="tel" name="telepon" id="telepon"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email</label></td>
+                                <td>:</td>
+                                <td><input type="email" id="email" name="email"></td>
+                                <td style="text-align: right;"><label for="hp">HP</label></td>
+                                <td><input type="tel" name="hp" id="hp"></td>
+                            </tr>
+                        </table>
                         <table>
                             <tr>
-                                <td></td>
+                                <td width="20%"><label for="pendidikan">Pendidikan Terakhir</label></td>
+                                <td>:</td>
+                                <td width="80%"><input type="text" name="pendidikan" id="pendidikan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pekerjaan">Pekerjaan / Bagian</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="pekerjaan" id="pekerjaan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="alamat-kantor">Alamat Kantor</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="alamat-kantor" id="alamat-kantor"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="warga-negara">Warga Negara</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="warga-negara" id="warga-negara"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td><label for="tangal-dirawat">Pasien pernah dirawat di RH Juzairi Safitli</label></td>
+                                <td width="6%" style="text-align: right;"><label for="tanggal-dirawat">tanggal</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="tanggal-dirawat" id="tanggal-dirawat"></td>
+                                <td width="7%" style="text-align: right;"><label for="bulan-dirawat">bulan</label></td>
+                                <td>:</td>
+                                <td width="15%"><input type="text" name="bulan-dirawat" id="bulan-dirawat"></td>
+                                <td width="7%" style="text-align: right;"><label for="tahun-dirawat">tahun</label></td>
+                                <td>:</td>
+                                <td width="15%"><input type="text" name="tahun-dirawat" id="tahun-dirawat"></td>
                             </tr>
                         </table>
                     </div>
                 </div>
+                <!-- bagian B identitas penanggung -->
+                <div class="point">
+                    <div style="font-size: larger;">B. IDENTITAS PENANGGUNG &lpar;bagian ini mohon diisi penanggung jawab&rpar;</div>
+                    <div class="isi">
+                        <table>
+                            <tr>
+                                <td width="20%"><label for="nama-penanggung">Nama Depan &lpar;sesuai KTP&rpar;</label></td>
+                                <td>:</td>
+                                <td width="80%"><input type="text" name="nama-penanggung" id="nama-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nama-ibu-kandung-penanggung">Nama Ibu Kandung &lpar;sesuai KTP&rpar;</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="nama-ibu-kandung-penanggung" id="nama-ibu-kandung-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="alamat-rumah-penanggung">Alamat rumah &lpar;sesuai KTP&rpar;</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="alamat-rumah-penanggung" id="alamat-rumah-penanggung"></td>
+                            </tr>
+                        </table>
+                        <table class="isinyaisi">
+                            <tr>
+                                <td width="12%"><label for="kelurahan-penanggung">Kelurahan</label></td>
+                                <td>:</td>
+                                <td width="47%"><input type="text" name="kelurahan-penanggung" id="kelurahan-penanggung"></td>
+                                <td width="10%" style="text-align: right;"><label for="kecamatan-penanggung">Kec.</label></td>
+                                <td width="47%" style="margin-right: 2%;"><input type="text" name="kecamatan-penanggung" id="kecamatan-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="kota-wilayah-penanggung">Kota / Wilayah</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="kota-wilayah-penanggung" id="kota-wilayah-penanggung"></td>
+                                <td style="text-align: right;"><label for="telepon-penanggung">Telepon.</label></td>
+                                <td><input type="tel" name="telepon-penanggung" id="telepon-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email-penanggung">Email</label></td>
+                                <td>:</td>
+                                <td><input type="email" id="email-penanggung" name="email-penanggung"></td>
+                                <td style="text-align: right;"><label for="hp-penanggung">HP</label></td>
+                                <td><input type="tel" name="hp-penanggung" id="hp-penanggung"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td width="20%"><label for="alamat-kantor-penanggung">Alamat Kantor</label></td>
+                                <td>:</td>
+                                <td width="80%"><input type="text" name="alamat-kantor-penanggung" id="alamat-kantor-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pekerjaan-penanggung">Pekerjaan / Bagian</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="pekerjaan-penanggung" id="pekerjaan-penanggung"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="hubungan-pasien">Hubungan dengan Pasien sebagai</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="hubungan-pasien" id="hubungan-pasien"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- Poin bagian C Kelas perawatan yang diminta -->
+                <div class="point">
+                    <div style="font-size: larger;">C. KELAS PERAWATAN YANG DIMINTA &lpar;bagian ini mohon diisi admission&rpar;</div>
+                    <div class="isi">
+                        <table>
+                            <tr>
+                                <td width="20%"><label for="kelas-perawatan">Kelas Perawatan</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="kelas-perawatan" id="kelas-perawatan"></td>
+                                <td width="7%" style="text-align: right;"><label for="kamar">Kamar</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="kamar" id="kamar"></td>
+                                <td style="text-align: right;"><label for="lantai">Lantai</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="lantai" id="lantai"></td>
+                            </tr>
+                            <tr>
+                                <td width="20%"><label for="tanggal-masuk">Tanggal Masuk</label></td>
+                                <td>:</td>
+                                <td width="20%"><input type="text" name="tanggal-masuk" id="tanggal-masuk"></td>
+                                <td style="text-align: right;"><label for="jam">Jam</label></td>
+                                <td>:</td>
+                                <td width="20%"><input type="text" name="jam" id="jam"></td>
+                                <td width="12%" style="text-align: right;"><label for="dokter-pengirim">Dokter Pengirim</label></td>
+                                <td>:</td>
+                                <td width="40%"><input type="text" name="dokter-pengirim" id="dokter-pengirim"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="dpjp">DPJP</label></td>
+                                <td>:</td>
+                                <td colspan="7"><input type="text" name="dpjp" id="dpjp"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">Asal Pasien &lpar;pilih satu&rpar;</td>
+                            </tr>
+                        </table>
+                        <div class="isibagianc">
+                            <input type="radio" name="asal-pasien" id="igd" value="igd">
+                            <label for="igd" style="margin-right: 35%;">IGD</label>
+                            <input type="radio" name="asal-pasien" id="irj" value="irj" style="margin-left: 35%;">
+                            <label for="irj">IRJ</label>
+                        </div>
+                    </div>
             </div>
         </div>
     </form>
