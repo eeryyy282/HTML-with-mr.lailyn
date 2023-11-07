@@ -12,20 +12,39 @@
             width: 1000px;
             margin: 0 auto;
             background-color: white;
-            text-align: center;
-            vertical-align: middle;
             font-weight: bold;
+        }
+        .kabag img {
+            width: 100%;
+            height: 100%;
         }
         .kepala {
             width: 1000px;
-            height: 100px;
+            height: 300px;
             background-color: #016A70;
-            color: white;
         }
         .navigator {
             width: 1000px;
             height: 50px;
             background-color: #FFFFDD;
+        }
+        .navigator li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 50px;
+        }
+        .navigator ul {
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .navigator button {
+            float: right;
+        }
+        
+        .navigator a {
+            text-decoration: none;
+            color: black;
         }
         .sampingkiri {
             width: 350px;
@@ -33,15 +52,33 @@
             background-color: #D2DE32;
             float: left;
         }
+        .sampingkiri ul {
+            margin-left: 2px;
+        }
+        .sampingkiri li {
+            list-style: circle;
+            text-decoration: none;
+        }
+        .sampingkiri h4 {
+            text-align: center;
+        }
         .konten {
             width: 650px;
             height: 400px;
             background-color: #A2C579;
             float: right;
         }
+        .konten h4 {
+            text-align: center;
+        }
+        .konten p {
+            font-weight: normal;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
         .kaki {
             width: 1000px;
-            height: 100px;
+            height: 30px;
             background-color: #016A70;
             clear: both;
             color: white;
@@ -51,19 +88,37 @@
 <body>
     <div class="kabag">
         <div class="kepala">
-            ISI KEPALA &lpar;Header&rpar;
+            <img src="http://vclass.unh.ac.id/pluginfile.php/1/theme_moove/sliderimage1/1699162367/banner%20vclass2-1.jpg" alt="banner">
         </div>
         <div class="navigator">
-            ISI NAVIGATOR &lpar;Navigation&rpar;
+            <ul>
+                <li>
+                    <a href="#">Beranda</a>
+                </li>
+                <li>
+                    <a href="#">Matakuliah</a>
+                </li>
+                <li>
+                    <a href="#">Pengumuman</a>
+                </li>
+            </ul>
+            <button>Masuk</button>
         </div>
         <div class="sampingkiri">
-            ISI SAMPING KIRI &lpar;Sidebar&rpar;
+            <h4>Materi Terbaru Hari Ini!</h4>
+            <ul>
+                <li><a href="#">Pembangunan proyek kota bernuansa kiamat kecil</a></li>
+                <li><a href="#">Membuat robot dengan menggunakan teknologi Spongebob</a></li>
+                <li><a href="#">Kekuatan AI mulai berencana untuk mengubah dunia</a> </li>
+            </ul>
         </div>
         <div class="konten">
-            ISI KONTEN &lpar;Content&rpar;
+            <h4>Kekuatan AI mulai berencana untuk mengubah dunia</h4>
+            <p>Secara keseluruhan, AI memiliki potensi besar untuk mengubah banyak aspek kehidupan, termasuk transportasi, kesehatan, bisnis, pendidikan, dan kreativitas. Kemampuan kecerdasan buatan untuk memproses data, mengenali pola, dan membuat keputusan menawarkan peluang baru untuk meningkatkan efisiensi, inovasi, dan kualitas hidup kita.</p>
+            <p>Ya, kecerdasan buatan (AI) memang memiliki potensi besar untuk mengubah dunia. Dari bidang kesehatan hingga transportasi, AI dapat digunakan untuk meningkatkan efisiensi dan akurasi. Misalnya, dalam bidang kesehatan, AI dapat digunakan untuk mendiagnosis penyakit dengan lebih cepat dan akurat. Dalam bidang transportasi, AI dapat digunakan untuk mengendalikan kendaraan otonom yang dapat mengurangi kecelakaan dan meningkatkan efisiensi lalu lintas. Namun, penting juga untuk mempertimbangkan etika dan dampak sosial dari penggunaan AI. Bagaimana menurut Anda? Apa bidang yang paling Anda minati dalam AI?</p>
         </div>
         <div class="kaki">
-            ISI KAKI &lpar;Footer&rpar;
+            &copy;Juzairi Safitli
         </div>
     </div>
 </body>
