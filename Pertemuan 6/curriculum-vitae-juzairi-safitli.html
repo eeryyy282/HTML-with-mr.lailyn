@@ -389,6 +389,96 @@
             line-height: normal;
             margin-top: 56px;
         }
+        .sertifikasi {
+            width: 1215px;
+            height: 317px;
+            clear: both;
+            background: #A1CCD1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .judul-sertifikasi {
+            color: #2C2E3E;
+            font-family: Roboto;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 28px;
+            width: 1214px;
+            text-align: center;
+        }
+        .bg-sertifikasi {
+            width: 372px;
+            height: 68px;
+            border-radius: 10px;
+            background: #F4F2DE;
+            margin-left: 14px;
+            margin-right: 14px;
+
+        }
+        .logo-sertifikasi img {
+            width: 54px;
+            height: 54px;
+            float: left;
+            margin: 5px;
+        }
+        .judul-atas-sertifikasi {
+            width: 294px;
+            height: 22px;
+            color: #2C2E3E;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            float: right;
+            margin-top: 10px;
+        }
+        .judul-bawah-sertifikasi {
+            width: 294px;
+            height: 22px;
+            color: #2C2E3E;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            float: right;
+            margin-top: 5px;
+        }
+        .copyright {
+            display: flex;
+            width: 311px;
+            height: 47px;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            margin: auto;
+        }
+        .gambar-pendidikan:hover img,
+        button:hover,
+        .bg-sertifikasi:hover,
+        .gambar-pekerjaan:hover img,
+        .gambar-organisasi:hover img {
+            transform: scale(1.2);
+            transition: transform 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animasi-masuk {
+            animation: fadeIn 1s ease-out;
+        }
     </style>
 </head>
 <body>
@@ -452,9 +542,48 @@
             <div class="kelebihan-kekurangan-deskripsi">Inovatif, semangat tiada henti, kreatif, dan tiada bosan untuk terus belajar adalah kelebihan yang dapat dibanggakan oleh sosok penulis sendiri. Penulis telah mencapai berbagai prestasi tiada henti selama sepuluh tahun terakhir. Telah banyak hal yang dilewati dan terlewati, menjadikan penulis benar-benar telah mendapatkan banyak pengalaman dan materi berharga dari berbagai macam perspektif kehidupan. Sedih, bahagia, marah, frustasi, bosan, hampir semua emosi sudah menjadi  makanan sehari-hari dalam kehidupan penulis. Penulis hanya ingin merasakan pengalaman berharga yang baru, menyenangkan, dan memberikan perubahan bukan hanya kepada internal diri pribadi penulis, tetapi juga eksternal yang mencakup seluruh insan kehidupan dunia.
                 <br><br>Layaknya manusia yang tidak sempurna, penulis memiliki kekurangan yang hampir menghancurkan karir penulis selama sepuluh tahun terakhir, “bosan”. Penulis selalu merasa bosan ketika menjalani semua aktivitas yang penulis jalankan. Selama sepuluh tahun terakhir, rasa “bosan” selalu menghantui setiap langkah yang penulis lalui. Namun, untuk mencegah hal tersebut, penulis selalu mengikuti berbagai aktivitas Volunteer untuk mengisi kekosongan yang menyebabkan rasa “bosan” penulis. Juzairi Go Course, organisasi pendidikan independen juga penulis bentuk sebagai salah satu upaya untuk mencegah kekurangan tersebut.
                 <br><br>“Robot bisa mengalahkan semua kemampuan manusia, kecuali cinta yang tak bisa mereka ambil dari kita.”
-                <br><br><br>Agustus 2040 <br><br><br><br>H. Ir. Prof. Muhammad Juzairi Safitli, S.Kom, M.Kom, Gr.
+                <br><br><br>Agustus 2040 <br><br><br>H. Ir. Prof. Muhammad Juzairi Safitli, S.Kom, M.Kom, Gr.
             </div>
         </div>
+        <div class="sertifikasi">
+            <div class="judul-sertifikasi">Keahlian & Sertifikasi</div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="logo-google.png" alt="logo-google"></div>
+                    <div class="judul-atas-sertifikasi">Google for Founder 2035</div>
+                    <div class="judul-bawah-sertifikasi">Best Founder of The Year</div>
+                </div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="logo.webp" alt="logo-godot"></div>
+                    <div class="judul-atas-sertifikasi">Godot Course for Game Dev. 2025</div>
+                    <div class="judul-bawah-sertifikasi">International Course Teacher</div>
+                </div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="world-record-logo.png" alt="logo-gwr"></div>
+                    <div class="judul-atas-sertifikasi">Genius World Record 2040</div>
+                    <div class="judul-bawah-sertifikasi">Most Volunteer Activator in The World</div>
+                </div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="logo-microsoft.png" alt="logo-microsoft"></div>
+                    <div class="judul-atas-sertifikasi">Microsoft Cyber Competition 2030</div>
+                    <div class="judul-bawah-sertifikasi">Rank #2 from 1k+  World Participant</div>
+                </div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="logo-python.png" alt="logo-python"></div>
+                    <div class="judul-atas-sertifikasi">Python Data Analyst World Cup 2027</div>
+                    <div class="judul-bawah-sertifikasi">Rank #3 from 100k World Participant</div>
+                </div>
+                <div class="bg-sertifikasi">
+                    <div class="logo-sertifikasi"><img src="logo-garuda.png" alt="logo-garuda"></div>
+                    <div class="judul-atas-sertifikasi">Indonesia Cyber Security Minister 2030</div>
+                    <div class="judul-bawah-sertifikasi">2030 - 2040 Indonesia’s Minister</div>
+                </div>
+        </div>
+        <div class="copyright">Copyright&copy;&nbsp;Muhammad Juzairi Safitli</div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.ukuran-cv').classList.add('animasi-masuk');
+        });
+    </script>
 </body>
 </html>
