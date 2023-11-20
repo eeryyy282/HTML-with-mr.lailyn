@@ -1,0 +1,20 @@
+/* Tambahkan gaya kustom Anda di sini */
+
+body {
+    padding-top: 56px; /* Tinggi navbar */
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Warna latar belakang navbar */
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tambahkan gaya tambahan sesuai kebutuhan Anda */
